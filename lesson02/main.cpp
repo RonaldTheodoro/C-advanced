@@ -1,5 +1,3 @@
-/* Base class example */
-
 #include <iostream>
 #include <sstream>
 
