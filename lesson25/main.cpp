@@ -30,8 +30,8 @@ int main () {
     try {
         ration = quotient (numer, denom);
         cout << "Result is: " << ration << endl;
-    } catch (...) {
-        cout << "Exception throw and caught" << endl;
+    } catch (DivideByZero &except) {
+        cout << except.what () << endl;
     }
     return 0;
 }
