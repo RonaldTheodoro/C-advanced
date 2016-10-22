@@ -36,6 +36,37 @@ int main () {
     display (names);
     cout << endl;
 
+    cout << "After add a new element" << endl;
+    names.push_front ("Barry");
+    display (names);
+    cout << endl;
+
+    cout << "After remove a element" << endl;
+    names.remove ("Elizabeth");
+    display (names);
+    cout << endl;
+
+    cout << "Pop front" << endl;
+    names.pop_front ();
+    display (names);
+    cout << endl;
+
+    cout << "Pop back" << endl;
+    names.pop_back ();
+    display (names);
+    cout << endl;
+
+    cout << "Clear" << endl;
+    names.clear ();
+    display (names);
+    cout << endl;
+    
+    if (names.empty ())
+        cout << "list empty" << endl;
+    else
+        cout << "list not empty" << endl;
+    
+    
     cout << "Size of list: " << names.size () << endl;
     return 0;
 }
